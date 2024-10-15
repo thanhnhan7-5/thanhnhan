@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .form{
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px gray;
+        }
+        .form-control{
+            width: 90%;
+        }
+        .form-control:focus{
+            background-color:yellow;
+        }
+        .btn{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            box-shadow: inset 0 0 10px lightgreen;
+        }
+        .btn:hover{
+            background-color:black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">FORM ĐĂNG KÝ </h1>
+    <form class="form" action="" method="post">
+        HỌ VÀ TÊN :     <br>
+        <input class="form-control" type="text" name="" id=""><br>
+        GiỚI TÍNH :
+        ,<label for="">
+          <input type="radio" name="gender"id="">NAM
+          <input type="radio" name="gender"id="">NỮ
+        </label><br>
+        QUỐC TỊCH : <br>
+        <select name="list" id="list">
+            <option value="VIỆT NAM ">VIỆT NAM </option>
+            <option value="UNITED STATES">UNITED STATES</option>
+            <option value="THÁI LAN ">THÁI LAN </option>
+            <option value="LÀO">LÀO </option>
+        </select> <br>
+        SỞ THÍCH <br>
+        <label for="">
+            <input type="checkbox"name=""> THỂ THAO 
+        </label>
+        <label for="">
+            <input type="checkbox"name=""> XEM PHIM
+        </label>
+        <label for="">
+            <input type="checkbox"name=""> NGHE NHẠC 
+        </label><br>
+        GHI CHÚ : <br>
+        <textarea class="form-control" name="" id=""cols="50" rows="10"></textarea><br>
+        <hr>
+        <input class="btn" type="submit" value="Submit">
+        <input class="btn" type="reset" value="Reset">
+    </form>
+</body>
+</html>
